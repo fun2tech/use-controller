@@ -9,6 +9,18 @@ export const Wrapper = ({ children }) => (
   </Fragment>
 )
 
+export const Button = ({ inner, ...props }) => (
+  <span className="clicky" {...props}>
+    {inner}
+  </span>
+)
+
+export const Thingy = ({ children, ...props }) => (
+  <span className="clicky" {...props}>
+    {children}
+  </span>
+)
+
 const Style = () => (
   <style>{`
     body {

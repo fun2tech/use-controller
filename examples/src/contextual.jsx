@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Whatever } from "./extended";
+import { Item } from './common';
 
 const useWhatever = Whatever.hook();
 
@@ -25,12 +26,11 @@ const InnerButton = () => {
   const state = useWhatever();
 
   return (
-    <div
-      className="clicky"
+    <Item
       onClick={() => {
         state.value = "Somebody pushed the button!"
       }}>
       Don't Touch!
-    </div>
+    </Item>
   )
 }

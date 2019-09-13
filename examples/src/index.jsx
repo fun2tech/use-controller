@@ -2,11 +2,15 @@ import ReactDOM from "react-dom";
 import React from "react";
 
 import { Wrapper } from "./common";
-import { Simple } from "./simple";
+import { Multi } from "./multiple";
+import { Example } from "./example";
+import { SomethingWithEvents } from './extended';
 
 ReactDOM.render(
   <Wrapper>
-    <Simple />
+    {/* <Example /> */}
+    <Multi/>
+    {/* <SomethingWithEvents /> */}
   </Wrapper>, 
   document.getElementById("root")
 );

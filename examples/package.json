@@ -4,8 +4,11 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
+    "@expressive/react": "^1.0.0-beta.25",
+    "@reach/router": "^1.2.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.5"
+    "react-dom": "^16.8.5",
+    "react-use-controller": "^1.0.0-beta.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

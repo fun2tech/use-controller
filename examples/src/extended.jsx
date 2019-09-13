@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 import React from "react";
 import Controller from 'use-stateful';
 
-export class Whatever extends Controller {
+export class AsyncEvents extends Controller {
   
   constructor(quote){
     super();
@@ -24,8 +24,8 @@ export class Whatever extends Controller {
   }
 };
 
-export const ClassEqivalent = () => {
-  const { value, gotClicked } = Whatever.use();
+export const SomethingWithEvents = () => {
+  const { value, gotClicked } = AsyncEvents.use();
 
   return (
     <div
